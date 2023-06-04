@@ -36,7 +36,7 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 
 # deploy contract
-npx hardhat run scripts/deploy.ts
+npx hardhat run scripts/deployMySimpleToken.ts
 
 # inspect the block data
 
