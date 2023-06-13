@@ -57,7 +57,9 @@ anvil -a2
 # deploy to local node
 export ETH_RPC_URL=http://localhost:8545
 export KEY=0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 
+
 forge create --private-key ${KEY} contracts/Counter.sol:Counter --constructor-args 10
+
 [⠔] Compiling...
 No files changed, compilation skipped
 Deployer: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
@@ -69,8 +71,10 @@ forge verify-contract 0x5FbDB2315678afecb367f032d93F642f64180aa3 src/Counter.sol
 
 # deploy to goerli
 export ETH_RPC_URL=https://rpc.ankr.com/eth_goerli
-epxort KEY=your-goerli-wallet-key
+export KEY=your-goerli-wallet-key
+
 forge create --private-key ${KEY} contracts/Counter.sol:Counter --constructor-args 10
+
 Deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
 Transaction hash: 0xf809e70cab2837af5af651b04b711b7f7cfd7be5db8e604e6dd70a2989fc8ffa
 
