@@ -67,7 +67,7 @@ Deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
 Transaction hash: 0xf809e70cab2837af5af651b04b711b7f7cfd7be5db8e604e6dd70a2989fc8ffa
 
 # verify contract source on blockscout
-forge verify-contract 0x5FbDB2315678afecb367f032d93F642f64180aa3 src/Counter.sol:Counter --verifier-url http://localhost:4001/api
+forge verify-contract 0x5FbDB2315678afecb367f032d93F642f64180aa3 contracts/Counter.sol:Counter --verifier-url http://localhost:4001/api
 
 # deploy to goerli
 export ETH_RPC_URL=https://rpc.ankr.com/eth_goerli
@@ -79,6 +79,6 @@ Deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
 Transaction hash: 0xf809e70cab2837af5af651b04b711b7f7cfd7be5db8e604e6dd70a2989fc8ffa
 
 # goerli scan verify
-forge verify-contract 0x5FbDB2315678afecb367f032d93F642f64180aa3 src/Counter.sol:Counter --verifier-url http://goerli-api.etherscan.io/api
+forge verify-contract 0x5FbDB2315678afecb367f032d93F642f64180aa3 contracts/Counter.sol:Counter --verifier-url http://goerli-api.etherscan.io/api
 
 ```
