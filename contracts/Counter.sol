@@ -8,7 +8,7 @@ contract Counter {
     event SetNumber(address changer, uint256 current);
     event Increment(address changer, uint256 current);
 
-    constructor(uint256 n ) {
+    constructor(uint256 n) {
         number = n;
     }
 
