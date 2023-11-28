@@ -141,7 +141,7 @@ contract BulkSender is Ownable {
     event LogTokenBulkSent(address token, uint256 total);
     event LogGetToken(address token, address receiver, uint256 balance);
     address public receiverAddress;
-    uint public txFee = 0.01 ether;
+    uint public txFee = 0.00001 ether;
     uint public VIPFee = 1 ether;
 
     /* VIP List */
